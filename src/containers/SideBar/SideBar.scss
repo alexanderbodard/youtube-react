@@ -4,7 +4,6 @@
   background-color: #f5f5f5;
   margin-top: $header-nav-height;
   overflow-y: auto;
-  padding-bottom: $header-nav-height;
 
   .sidebar-item:hover {
     background: #ebebeb;
@@ -13,4 +12,10 @@
 
 .side-nav.ui.vertical.menu {
   width: $sidebar-left-width;
+}
+
+// Compensate the top margin
+div.ui.borderless.stackable.vertical.left.fixed.side-nav.menu {
+  border-bottom-width: $header-nav-height;
+  border-bottom-style: solid;
 }
